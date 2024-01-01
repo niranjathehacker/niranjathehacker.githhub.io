@@ -6,12 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-
 }
-
- 
-
-
 html{
     scroll-behavior: smooth;
 }
@@ -36,10 +31,9 @@ section{
     padding: 100px 0;
 }
 .max-width{
-    max-width:1400px;
+    max-width: 1300px;
     padding: 0 80px;
     margin: auto;
-    
 }
 .about, .services, .skills, .teams, .contact, footer{
     font-family: 'Poppins', sans-serif;
@@ -178,7 +172,6 @@ section .title::after{
     background-size: cover;
     background-attachment: fixed;
     font-family: 'Ubuntu', sans-serif;
-     background: linear-gradient(to right, #000f0c, #093637);
 }
 .home .max-width{
   width: 100%;
@@ -223,12 +216,6 @@ section .title::after{
 /* about section styling */
 .about .title::after{
     content: "who i am";
-    background:black ;
-
-}
-.about{
-    background: linear-gradient(to right, #000f0c, #093637);
-    color:whitesmoke ;
 }
 .about .about-content .left{
     width: 45%;
@@ -274,7 +261,6 @@ section .title::after{
 .services, .teams{
     color:#fff;
     background: #111;
-     background: linear-gradient(to right, #000f0c, #093637);
 }
 .services .title::before,
 .teams .title::before{
@@ -318,16 +304,9 @@ section .title::after{
 }
 
 /* skills section styling */
-.skills{
-    background: linear-gradient(to right, #000f0c, #093637);
-    font color:whitesmoke ;
-    color:whitesmoke;
-}
 
 .skills .title::after{
     content: "what i know";
-    background-color:black;
-
 }
 .skills .skills-content .column{
     width: calc(50% - 30px);
@@ -399,14 +378,72 @@ section .title::after{
     width: 70%;
 }
 
-./* contact section styling */
-.contact{
-     color:whitesmoke ;
-     background: linear-gradient(to right, #000f0c, #093637);
+/* teams section styling */
+.teams .title::after{
+    content: "who with me";
 }
+.teams .carousel .card{
+    background: #222;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+.teams .carousel .card:hover{
+    background: crimson;
+}
+.teams .carousel .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+.teams .carousel .card:hover .box{
+    transform: scale(1.05);
+}
+.teams .carousel .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+.teams .carousel .card img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid crimson;
+    transition: all 0.3s ease;
+}
+.teams .carousel .card:hover img{
+    border-color: #fff;
+}
+.owl-dots{
+    text-align: center;
+    margin-top: 20px;
+}
+.owl-dot{
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none!important;
+    border-radius: 50%;
+    border: 2px solid crimson!important;
+    transition: all 0.3s ease;
+}
+.owl-dot.active{
+    width: 35px;
+    border-radius: 14px;
+}
+.owl-dot.active,
+.owl-dot:hover{
+    background: crimson!important;
+}
+
+/* contact section styling */
 .contact .title::after{
     content: "get in touch";
-    background-color:black;
 }
 .contact .contact-content .column{
     width: calc(50% - 30px);
@@ -641,318 +678,3 @@ footer span a:hover{
         line-height: 38px;
     }
 }
-
-.text-1{
-
-    color: black;
-
-}
-.text-2{
-    color: black;
-}
-.text-3{
-
-    color: black;
-}
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.container{
-    display: flex;
-    justify-content: center;
-    height: 100vh;
-    align-items: center;
-    background: linear-gradient(to right, #000f0c, #093637);
-    
-
-}
-
-.social > ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    border: 3px solid #bfbdbd;
-    padding: 30px;
-    border-radius: 50px;
-}
-
-.social > ul > li{
-    list-style-type: none;
-}
-
-.social > ul > li > a{
-    text-decoration: none;
-    border: 1px solid #fff;
-    display: inline-block;
-    border-radius: 50%;
-    padding: 10px;
-}
-
-
-.social > ul > li > a > i{
-    font-size: 40px;
-    color: #fff;
-}
-
-.social > ul > li > a > i:hover{
-    animation: vibe 0.3s;
-}
-
-.instagram{
-    margin: 0 2px;
-}
-
-.git{
-    background: #4078c0;
-}
-
-.insta{
-    background: #dc4c7c;
-}
-
-.face{
-    background: #1877F2;
-}
-
-.twitter{
-    background: #00acee;
-}
-
-.tele{
-    background: #0088cc;
-}
-
-.heading{
-    text-align: center;
-    margin-top: 10px;
-    padding: 5px;
-    font-size: 25px;
-    color: #dddddd;
-}
-
-.fa-heart{
-    color: rgb(238, 89, 89);
-}
-
-@keyframes vibe {
-    10%{
-        transform: rotate(15deg);
-    }
-    40%{
-        transform: rotate(-15deg);
-    }
-    70%{
-        transform: rotate(15deg);
-    }
-    100%{
-        transform: rotate(-15deg);
-    }
-}
-max-width{
-    background: linear-gradient(to right, #000f0c, #093637);
-    font-color:white ;
-}
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.container{
-    display: flex;
-    justify-content: center;
-    height: 100vh;
-    align-items: center;
-    background: linear-gradient(to right, #*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.container{
-    display: flex;
-    justify-content: center;
-    height: 100vh;
-    align-items: center;
-    background: linear-gradient(to right, #44a08d, #093637);
-}
-
-.social > ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    border: 3px solid #bfbdbd;
-    padding: 30px;
-    border-radius: 50px;
-}
-
-.social > ul > li{
-    list-style-type: none;
-}
-
-.social > ul > li > a{
-    text-decoration: none;
-    border: 1px solid #fff;
-    display: inline-block;
-    border-radius: 50%;
-    padding: 10px;
-}
-
-
-.social > ul > li > a > i{
-    font-size: 40px;
-    color: #fff;
-}
-
-.social > ul > li > a > i:hover{
-    animation: vibe 0.3s;
-}
-
-.instagram{
-    margin: 0 2px;
-}
-
-.git{
-    background: #4078c0;
-}
-
-.insta{
-    background: #dc4c7c;
-}
-
-.face{
-    background: #1877F2;
-}
-
-.twitter{
-    background: #00acee;
-}
-
-.tele{
-    background: #0088cc;
-}
-
-.heading{
-    text-align: center;
-    margin-top: 10px;
-    padding: 5px;
-    font-size: 25px;
-    color: #dddddd;
-}
-
-.fa-heart{
-    color: rgb(238, 89, 89);
-}
-
-@keyframes vibe {
-    10%{
-        transform: rotate(15deg);
-    }
-    40%{
-        transform: rotate(-15deg);
-    }
-    70%{
-        transform: rotate(15deg);
-    }
-    100%{
-        transform: rotate(-15deg);
-    }
-}, #093637);
-}
-
-.social > ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    border: 3px solid #bfbdbd;
-    padding: 30px;
-    border-radius: 50px;
-}
-
-.social > ul > li{
-    list-style-type: none;
-}
-
-.social > ul > li > a{
-    text-decoration: none;
-    border: 1px solid #fff;
-    display: inline-block;
-    border-radius: 50%;
-    padding: 10px;
-}
-
-
-.social > ul > li > a > i{
-    font-size: 40px;
-    color: #fff;
-}
-
-.social > ul > li > a > i:hover{
-    animation: vibe 0.3s;
-}
-
-.instagram{
-    margin: 0 2px;
-}
-
-.git{
-    background: #4078c0;
-}
-
-.insta{
-    background: #dc4c7c;
-}
-
-.face{
-    background: #1877F2;
-}
-
-.twitter{
-    background: #00acee;
-}
-
-.tele{
-    background: #0088cc;
-}
-
-.heading{
-    text-align: center;
-    margin-top: 10px;
-    padding: 5px;
-    font-size: 25px;
-    color: #dddddd;
-}
-
-.fa-heart{
-    color: rgb(238, 89, 89);
-}
-
-@keyframes vibe {
-    10%{
-        transform: rotate(15deg);
-    }
-    40%{
-        transform: rotate(-15deg);
-    }
-    70%{
-        transform: rotate(15deg);
-    }
-    100%{
-        transform: rotate(-15deg);
-    }
-}
-
-
-
-
-
-
-
-
